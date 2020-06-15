@@ -1,0 +1,19 @@
+h1 {color: red; font-weight: bold;}
+
+/* id选择器 */
+#pid {color: blue;}
+
+/* 类选择器 */
+.pclass {color: yellow;}
+
+/* html标记选择器 */
+h3 {color: gray;}
+
+/* 交集选择器 */
+h4.pc {color: pink;}
+
+/* 并集选择器 */
+h5,h6 {color: blueviolet;}
+
+/* 子代选择器 */
+div p {color: coral;}

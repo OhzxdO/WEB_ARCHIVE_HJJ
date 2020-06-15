@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>账号</label>
+        <input type="text" onmouseover="mousefocus(this)" onblur="mousefocusout(this)">
+        <br>
+        <label>密码</label>
+        <input type="password" onfocus="mousefocus(this)" onblur="mousefocusout(this)">
+        <br>
+        <br>
+        <input type="text" id="demo" style="width: 200px;height: 100px;">
+        <label><br>选择文本框字体颜色</label>
+        <input id="color" type="color">
+
+    </div>
+    <script>
+        function mousefocus(id){
+            id.style.background="yellow";
+        }
+        function mousefocusout(id){
+            id.style.background="white";
+        }
+        let color=document.getElementById("color");
+        color.onchange=function(){
+            document.getElementById("demo").style.color=this.value;
+        }
+    </script>
+</body>
+</html>

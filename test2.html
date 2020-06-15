@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="title,meta" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="这是一个关于介绍html语言的网站">
+  <title>使用头部标记设置网页相关信息</title>
+  
+</head>
+<body>
+  <p id='time'></p>秒后跳转网页
+  
+  <script>
+    let int=setInterval('clock()',1000)
+
+    let num=5
+    function clock(){
+      num>0 ? num--:clearInterval(int)
+      document.getElementById('time').innerHTML=num
+      if(num==0){
+        window.location.href="http://www.sise.com.cn"
+      }
+    }
+  </script>
+</body>
+</html>
